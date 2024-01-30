@@ -188,21 +188,21 @@ def ch04():
 #             return round_ch7
        
 while True:
-    # Channel0 = ch00()
+    Channel0 = ch00()
     Channel1 = ch01()
-    Channel2 = ch02()
-    Channel3 = ch03()
-    Channel4 = ch04()
+    # Channel2 = ch02()
+    # Channel3 = ch03()
+    # Channel4 = ch04()
     # Channel4 = ch04()
     # Channel5 = ch05()
     # Channel6 = ch06()
     # Channel7 = ch07()
-    mixTank_lv = (Channel1 - 0.8314)/0.0354
-    disct1_lv = (Channel2 - 0.9226)/0.0667
-    disct2_lv = (Channel3 - 0.9944)/0.0676
-    # print("Ch 1 mixing = ", Channel1, "Distct 1 = ", Channel2, "Distct 2 = ", Channel3)
+    left_lv = 13.602*Channel0-8.108
+    right_lv = 13.18*Channel1-8.0568
+    print("Left :", left_lv,"cm, ", Channel0,"mV")
+    print("Right :", right_lv,"cm, ", Channel1,"mV")
     # print("Mixing tank water level = ", level1)
-    print("Disct 1 =" , disct1_lv,"cm, ", Channel2,"mV", "Disct 2 = ", disct2_lv,"cm", Channel3,"mV")
+    # print("Disct left =" , disct_left_lv,"cm, ", Channel0,"mV", "Disct right = ", disct_right_lv,"cm", Channel1,"mV")
 # while (datetime.datetime.now() - start_time).seconds < second_to_run:
 #     # Channel0 = ch00()
 #     Channel1 = ch01()
